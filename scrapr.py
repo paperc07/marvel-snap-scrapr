@@ -10,7 +10,7 @@ def scrap():
     url = 'https://marvelsnapzone.com/cards'
 
     chrome_options = Options()
-    chrome_options.headless = True
+    chrome_options.add_argument('--headless=new')
     chrome_options.add_argument('--disable-dev-shm-usage')
     chrome_options.add_argument('--disable-extensions')
     chrome_options.add_argument('--disable-gpu')
