@@ -40,7 +40,8 @@ def scrap():
 
     image_urls = []
     for character in characters:
-        image_urls.append(character['url'])
+        if character['status'] == 'released':  # only add released cards
+            image_urls.append(character['url'])
 
     # download_images(image_urls)
 
